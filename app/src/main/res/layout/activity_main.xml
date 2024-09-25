@@ -190,13 +190,28 @@
             </LinearLayout>
 
         </LinearLayout>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_add"
+            android:scaleType="fitXY"
+            app:tint="@color/sky"
+            android:layout_alignParentEnd="true"
+            android:layout_above="@id/bottom_nav"
+            android:layout_margin="@dimen/_7mdp"/>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_nav"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:background="@color/sky"
+            app:menu="@menu/bottom_menu"
+            app:itemIconTint="@color/white"
+            app:itemTextColor="@color/white"
+            app:itemActiveIndicatorStyle="@style/App.CustomIndicator"
+            app:labelVisibilityMode="labeled"
             android:layout_alignParentBottom="true"/>
     </RelativeLayout>
 
